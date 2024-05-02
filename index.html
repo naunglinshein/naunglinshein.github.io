@@ -321,7 +321,7 @@
 <script>
 function downloadFile() {
     // Fetch the file
-    fetch('documents/NaungLinShein@Resume.pdf')
+    fetch('/documents/NaungLinShein@Resume.pdf')
     .then(response => response.blob())
     .then(blob => {
         // Create a temporary anchor element
