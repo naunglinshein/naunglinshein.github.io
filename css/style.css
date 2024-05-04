@@ -22,7 +22,7 @@ a:hover {
 
 #banner {
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     /* background-image: url("Image/home/h1.jpg"); */
     /* background: linear-gradient(to bottom, black, transparent); */
     background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
@@ -49,19 +49,30 @@ a:hover {
     text-align: center;
 }
  .homeName{
-    font-size: 5rem;
+    /* font-size: 5rem; */
+    font-size: 60px;
+    font-size: 6.5vw;
     padding: 10px;
     margin-top: 20px;
+    /* text-shadow: -1px 1px 0 rgba(160, 160, 160, 0.1), 1px -1px 0 rgba(255, 255, 255, 0.1), 1px -1px 25px white, -1px 1.9px 1px #a0a0a0, -2px 3.8px 2px #a0a0a0; */
+  
  }
  .homePosition{
-    font-size: 4.5rem;
+    font-size: 50px;
+    font-size: 5.5vw;
+    /* font-size: 4.5rem; */
     padding: 10px;
+    /* text-shadow: -1px 1px 0 rgba(160, 160, 160, 0.1), 1px -1px 0 rgba(255, 255, 255, 0.1), 1px -1px 25px white, -1px 1.9px 1px #a0a0a0, -2px 3.8px 2px #a0a0a0; */
  }
  .homeBtn{
     padding: 10px;
+    box-shadow: 6px 6px 4px black;
+    /* text-shadow: -1px 1px 0 rgba(160, 160, 160, 0.1), 1px -1px 0 rgba(255, 255, 255, 0.1), 1px -1px 25px white, -1px 1.9px 1px #a0a0a0, -2px 3.8px 2px #a0a0a0; */
  }
 .text-show-case{
     width: 100%;
+    text-shadow: 6px 6px 4px black;
+    /* text-shadow: 1px -1px 25px rgb(94, 88, 88),1px -1px 25px rgb(112, 110, 110),1px -1px 25px rgb(102, 98, 98); */
 }
 
 .drop-down {
@@ -75,6 +86,7 @@ a:hover {
 
 body {
     min-height: 200vh;
+    overflow-x: hidden !important;
 }
 
 .navbar-default {
@@ -97,6 +109,7 @@ section {
     font-weight: bold;
     animation: blink-animation 0.8s infinite;
     margin-top: -23px;
+    margin-top: -3vw;
     margin-left: -9px;
 }
 
@@ -115,6 +128,7 @@ section {
 .wall{
     font-size: 47px;
     border-color: #C5C5CC;
+    box-shadow: 6px 6px 4px black;
 }
 
 
@@ -287,7 +301,7 @@ img {
 
 .main-box-container{
   width:100%;
-  min-height:100vh;
+  /* max-height:100vh; */
   justify-content:center;
   align-items:center;
 }
@@ -321,6 +335,7 @@ color:#fff;
 .animate {
     opacity: 1;
     transform: translateY(0);
+    z-index: 1;
 }
 
 #skills{
@@ -335,6 +350,7 @@ color:#fff;
   --bg-darker: #15151C;
   --font-body: #55555C;
   --shadow: #C5C5CC;
+  overflow-x: hidden !important;
 }
 
 /* demo related */
@@ -365,6 +381,7 @@ color:#fff;
   padding: 23px;
   border-radius:27px;
   margin: 0 20px 20px 20px;
+  /* box-shadow: 6px 6px rgb(66, 65, 65); */
 }
 
 .tpn_card img{
@@ -377,10 +394,11 @@ color:#fff;
   color: var(--bg-dark);
 }
 
-.tpn_card p{
+.tpn_card span{
   color: var(--font-body);
-  font-weight:400;
-  margin-bottom:24px;
+  margin-bottom: 5px;
+  /* font-weight:400; */
+  /* margin-bottom:24px; */
 }
 
 .tpn_card .tpn_btn{
@@ -392,6 +410,7 @@ color:#fff;
   color: #FFF !important;
   box-shadow: 1px 7px 13px var(--shadow);
   transition: all .7s ease;
+  margin-top: 20px;
 }
 
 .tpn_card .tpn_btn:hover{
@@ -493,3 +512,150 @@ h5{
   margin-top: 15px;
   font-size: 16px;
 }
+
+#certificates{
+  background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+  scroll-margin-top: 60px;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width:250px;
+  height: 350px;
+  border: 1px solid #3b3737;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.flip-box h2{
+  margin: 10px;
+}
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 25px;
+}
+
+.flip-box img{
+  border-radius: 25px;
+  width: 250px;
+  height: 350px;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 25px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+  border-radius: 25px;
+  /* color: black; */
+}
+
+/* Style the back side */
+.flip-box-back {
+  background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Style the Image Used to Trigger the Modal */
+#img01 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: auto;
+  height: 300px;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  margin-top: 50px;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 900px;
+}
+
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 100%;
+  }
+}
+

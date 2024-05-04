@@ -66,3 +66,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const skillsSection = document.getElementById('skills');
     observer.observe(skillsSection);
 });
+
+function downloadFile(filePath,fileName) {
+    fetch(filePath)
+    .then(response => response.blob())
+    .then(blob => {
+        // Create a temporary anchor element
+        const link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        link.download = fileName;
+        link.click();
+        window.URL.revokeObjectURL(link.href);
+    })
+    .catch(error => console.error('Error downloading file:', error));
+}
+
+function previewFile(src){
+    var modal = document.getElementById('myModal');
+    // var preview = document.getElementById('preview');
+    modal.style.display = "none";
+    var modalImg = document.getElementById("img01");
+    modal.style.display = "block";
+    modalImg.src = src;
+}
+
+function closeModel(){
+    var modal = document.getElementById('myModal');
+    modal.style.display = "none";
+}
