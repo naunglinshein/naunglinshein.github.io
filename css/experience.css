@@ -1,0 +1,72 @@
+#erp{
+    background-color: rgb(38, 32, 39);
+    z-index: 0;
+    min-height: 100vh - 50px;
+    scroll-margin-top: 70px;
+    position: relative;
+}
+
+section {
+    padding: 50px 20px;
+}
+.li{
+    padding-bottom: 10px;
+}
+
+#skills{
+    background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+    scroll-margin-top: 60px;
+}
+#projects{
+    background-color: rgb(38, 32, 39);
+    scroll-margin-top: 60px;
+}
+#certificates{
+    background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+    scroll-margin-top: 60px;
+}
+h5{
+    padding-top: 15px;
+    font-size: 16px;
+}
+h3{
+    font-weight: 400;
+    font-style: normal;
+    font-size:25px;
+}
+
+footer{
+    background-color: #343a40;
+    color: #FFF;
+    padding: 10px;
+    padding-top: 40px;
+}
+.common-info-icon {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    display:inline-block;
+    margin: 10px;
+}
+.common-info-icon i {
+    font-size: 20px;
+    line-height: 40px;
+    color: black;
+}
+li{
+    padding-bottom: 10px;
+}
+
+p{
+    padding-top: 10px;
+}
+a {
+    font-size: 1.2rem;
+    color: #dad5d5;
+    text-decoration: none !important;
+}
+a:hover {
+    color: #fefffb;
+}
