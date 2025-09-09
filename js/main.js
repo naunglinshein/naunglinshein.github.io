@@ -1,8 +1,8 @@
-const phrases = ["Software Engineer", "Web Developer", "Problem Solver"];
+const phrases = ["Freelancer", "Software Engineer", "Web Developer", "Problem Solver"];
 let index = 0;
 let isTyping = true;
 let textIndex = 0;
-const speed = 100; // typing speed in milliseconds
+const speed = 100;
 
 function typeEffect() {
     if (isTyping) {
@@ -12,7 +12,7 @@ function typeEffect() {
             setTimeout(typeEffect, speed);
         } else {
             isTyping = false;
-            setTimeout(typeEffect, 1000); // Wait for 1 second before starting erasing
+            setTimeout(typeEffect, 1000);
         }
     } else {
         if (textIndex >= 0) {
@@ -21,8 +21,8 @@ function typeEffect() {
             setTimeout(typeEffect, speed);
         } else {
             isTyping = true;
-            index = (index + 1) % phrases.length; // Move to the next phrase
-            setTimeout(typeEffect, 1000); // Wait for 1 second before starting typing again
+            index = (index + 1) % phrases.length;
+            setTimeout(typeEffect, 1000);
         }
     }
 }
@@ -33,32 +33,28 @@ $(window).scroll(function() {
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
 
-// Callback function to handle intersection changes
 function handleIntersection(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // The "Skills" section is now in the viewport
             entry.target.querySelectorAll('.box-container').forEach((block, index) => {
                 setTimeout(() => {
                     block.classList.add('animate');
-                }, index * 200); // Adjust delay as needed
+                }, index * 200);
             });
         } else {
-            // The "Skills" section is out of the viewport
             entry.target.querySelectorAll('.box-container').forEach((block, index) => {
                 setTimeout(() => {
                     block.classList.remove('animate');
-                }, index * 200); // Adjust delay as needed
+                }, index * 200);
             });
         }
     });
 }
 
-// Create an intersection observer instance
 const observer = new IntersectionObserver(handleIntersection, {
-    root: null, // Use the viewport as the root
-    rootMargin: '0px', // No margin
-    threshold: 0 // Trigger when 50% of the element is in view
+    root: null,
+    rootMargin: '0px',
+    threshold: 0
 });
 
 
@@ -71,7 +67,6 @@ function downloadFile(filePath,fileName) {
     fetch(filePath)
     .then(response => response.blob())
     .then(blob => {
-        // Create a temporary anchor element
         const link = document.createElement('a');
         link.href = window.URL.createObjectURL(blob);
         link.download = fileName;
@@ -83,7 +78,6 @@ function downloadFile(filePath,fileName) {
 
 function previewFile(src){
     var modal = document.getElementById('myModal');
-    // var preview = document.getElementById('preview');
     modal.style.display = "none";
     var modalImg = document.getElementById("img01");
     modal.style.display = "block";
@@ -94,3 +88,4 @@ function closeModel(){
     var modal = document.getElementById('myModal');
     modal.style.display = "none";
 }
+

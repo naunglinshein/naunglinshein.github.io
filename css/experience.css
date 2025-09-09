@@ -12,7 +12,7 @@ section {
 .li{
     padding-bottom: 10px;
 }
-
+/* 
 #skills{
     background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
     scroll-margin-top: 60px;
@@ -24,9 +24,8 @@ section {
 #certificates{
     background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
     scroll-margin-top: 60px;
-}
+} */
 h5{
-    padding-top: 15px;
     font-size: 16px;
 }
 h3{
@@ -69,4 +68,19 @@ a {
 }
 a:hover {
     color: #fefffb;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    background-color: #c0c0c0 !important;
+    width: 45px !important;
+}
+
+.carousel-inner img{
+    width: calc(100% - 90px);
+    margin-left: 45px !important;
+    margin-right: 45px !important;
+}
+
+.carousel-indicators li {
+    border: 1px solid black;
 }

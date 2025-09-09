@@ -18,13 +18,9 @@ a:hover {
 }
 
 
-/* header */
-
 #banner {
     width: 100%;
     max-height: 100vh;
-    /* background-image: url("Image/home/h1.jpg"); */
-    /* background: linear-gradient(to bottom, black, transparent); */
     background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
     background-repeat: no-repeat;
     background-position: center center;
@@ -48,44 +44,61 @@ a:hover {
     padding-bottom: 0;
     text-align: center;
 }
+
  .homeName{
     /* font-size: 5rem; */
     font-size: 60px;
     font-size: 6.5vw;
     padding: 10px;
-    margin-top: 20px;
-    /* text-shadow: -1px 1px 0 rgba(160, 160, 160, 0.1), 1px -1px 0 rgba(255, 255, 255, 0.1), 1px -1px 25px white, -1px 1.9px 1px #a0a0a0, -2px 3.8px 2px #a0a0a0; */
-  
- }
+    margin-top: 20px; 
+}
+
  .homePosition{
     font-size: 50px;
     font-size: 5.5vw;
     /* font-size: 4.5rem; */
     padding: 10px;
-    /* text-shadow: -1px 1px 0 rgba(160, 160, 160, 0.1), 1px -1px 0 rgba(255, 255, 255, 0.1), 1px -1px 25px white, -1px 1.9px 1px #a0a0a0, -2px 3.8px 2px #a0a0a0; */
  }
  .homeBtn{
     padding: 10px;
     box-shadow: 6px 6px 4px black;
-    /* text-shadow: -1px 1px 0 rgba(160, 160, 160, 0.1), 1px -1px 0 rgba(255, 255, 255, 0.1), 1px -1px 25px white, -1px 1.9px 1px #a0a0a0, -2px 3.8px 2px #a0a0a0; */
  }
 .text-show-case{
     width: 100%;
     text-shadow: 6px 6px 4px black;
-    /* text-shadow: 1px -1px 25px rgb(94, 88, 88),1px -1px 25px rgb(112, 110, 110),1px -1px 25px rgb(102, 98, 98); */
 }
 
 .drop-down {
     color: #fff;
 }
 
-.main-footer {
-    background-color: #161E33;
-    color: #fff;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #2f3439;
+  color: #fff;
 }
 
+.footer-left {
+  font-size: 14px;
+}
+
+.footer-right a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-right a:hover {
+  color: #00aced;
+}
+
+
 body {
-    min-height: 200vh;
+    /* min-height: 200vh; */
     overflow-x: hidden !important;
 }
 
@@ -223,7 +236,6 @@ img {
   position: absolute;
   bottom: 0;
   z-index: -3;
-  /* background-color: #666869; */
   width: 80%;
   height: 80%;
 }
@@ -301,7 +313,6 @@ img {
 
 .main-box-container{
   width:100%;
-  /* max-height:100vh; */
   justify-content:center;
   align-items:center;
 }
@@ -343,7 +354,6 @@ color:#fff;
     scroll-margin-top: 60px;
 }
 
-/* root */
 :root {
   --bg-light: #F5F5FC;
   --bg-dark: #35353C;
@@ -353,7 +363,6 @@ color:#fff;
   overflow-x: hidden !important;
 }
 
-/* demo related */
 
 #projects{
   background-color: rgb(38, 32, 39);
@@ -375,13 +384,11 @@ color:#fff;
   color: var(--bg-darker);
 }
 
-/* tpn card style */
 .tpn_card{
   background: var(--bg-light);
   padding: 23px;
   border-radius:27px;
   margin: 0 20px 20px 20px;
-  /* box-shadow: 6px 6px rgb(66, 65, 65); */
 }
 
 .tpn_card img{
@@ -397,8 +404,6 @@ color:#fff;
 .tpn_card span{
   color: var(--font-body);
   margin-bottom: 5px;
-  /* font-weight:400; */
-  /* margin-bottom:24px; */
 }
 
 .tpn_card .tpn_btn{
@@ -421,8 +426,7 @@ color:#fff;
 
 /* contact */
 #contact{
-  background-color: #313335;
-  /* background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%); */
+  background-color: rgb(38, 32, 39);
   scroll-margin-top: 60px;
 }
 
@@ -508,6 +512,14 @@ footer{
   color: black;
 }
 
+.common-test {
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  display:inline-block;
+  margin: 10px;
+}
+
 h5{
   margin-top: 15px;
   font-size: 16px;
@@ -518,13 +530,12 @@ h5{
   scroll-margin-top: 60px;
 }
 
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
   background-color: transparent;
   width:250px;
   height: 350px;
   border: 1px solid #3b3737;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; 
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   border-radius: 25px;
   margin-top: 20px;
@@ -533,7 +544,7 @@ h5{
 .flip-box h2{
   margin: 10px;
 }
-/* This container is needed to position the front and back side */
+
 .flip-box-inner {
   position: relative;
   width: 100%;
@@ -549,37 +560,32 @@ h5{
   width: 250px;
   height: 350px;
 }
-/* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-box-front,
 .flip-box-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
   border-radius: 25px;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-box-front {
   background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
   border-radius: 25px;
-  /* color: black; */
 }
 
-/* Style the back side */
 .flip-box-back {
   background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
   color: white;
   transform: rotateY(180deg);
 }
 
-/* Style the Image Used to Trigger the Modal */
 #img01 {
   border-radius: 5px;
   cursor: pointer;
@@ -590,23 +596,21 @@ h5{
 
 #myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
   margin-top: 50px;
 }
 
-/* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
@@ -614,9 +618,6 @@ h5{
   max-width: 900px;
 }
 
-
-
-/* Add Animation - Zoom in the Modal */
 .modal-content, #caption { 
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -634,7 +635,6 @@ h5{
   to {transform:scale(1)}
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
@@ -652,10 +652,43 @@ h5{
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
       width: 100%;
   }
 }
 
+
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: white;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9998;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+  bottom: 60px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+  filter: brightness(90%);
+}
+
+.scroll-up-icon{
+  color: black;
+}

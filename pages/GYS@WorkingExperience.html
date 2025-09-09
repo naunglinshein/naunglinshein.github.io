@@ -4,40 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYS Working Experience</title>
-    <link rel="icon" href="images/projects/BGExperience1.jpg">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/58ec7c6d3d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/experience.css">
-    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
 </head>
 
 <body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up scroll-up-icon"></i>
+    </div>
     <section id="erp">
-        <div class="container" style="color: #dad5d5;">
+        <div class="container-fluid" style="color: #dad5d5;">
             <h2>Dynamic Website</h2>
-            <h5>The Static Website project focused on creating a straightforward online platform for a company, featuring essential information and announcements.</h5>
+            <h5>The Dynamic Website project focused on building an online platform for a company, featuring essential information and announcements.</h5>
+            <p><strong>Tech Stack:</strong> HTML, CSS, Bootstrap, C# .NET, Microsoft SQL Server</p>
+
             <ul><h5>
                 <li>
                     Transitioned a static website to a dynamic that have been live connected with LMS
                 </li>
-                <li>
-                    Can See via this link >> <a href="https://gys.com.mm/" target="_blank">gys.com.mm</a> 
-                </li>
             </h5>
             </ul>
-        </div>
-    </section>
+            <br>
 
-    <section id="skills">
-        <div class="container" style="color: #dad5d5">
-            <h2>Learning Management System (LMS)</h2>
-            <h5>This project involved directing the development of a 
-                comprehensive system to streamline office operations. <br>This platform offered robust tools for course creation 
-                and management for teachers.Features that have been developed and Maintained:
+           <h2>Learning Management System (LMS)</h2>
+            <h5>
+                This project involved directing the development of a comprehensive system to streamline office operations. 
+                <br>
+                The platform offered robust tools for course creation and management for teachers. 
+                Key features developed and maintained:
             </h5>
+            <p><strong>Tech Stack:</strong> HTML, CSS, Bootstrap, C# .NET MVC, Microsoft SQL Server</p>
             <ul>
                 <h5>
                 <li>
@@ -48,11 +52,8 @@
                 <li>Add a feature Messaging System to Connect with Learning Platform</li>
                 </h5>
             </ul>
-        </div>
-    </section>
-    
-    <section id="projects">
-        <div class="container" style="color: #dad5d5">
+            <br>
+
             <h2>Learning Platform</h2>
             <h5> This is aimed to replicate the functionality of popular online education platforms like 
                 Udemy. It was meticulously developed to cater to the needs of both students and teachers in the realm of online 
@@ -61,6 +62,7 @@
                 <br>Develop Learning Platform from the Requirement Stage to Deployment Stage and Include the following 
                 Features that have been developed and Maintained:
                 </h5>
+            <p><strong>Tech Stack:</strong> HTML, CSS, Bootstrap, C# .NET MVC, Microsoft SQL Server</p>
             <ul><h5>
                 <li>Upload Feature of Structured courses and outlines for effective learning outcomes</li>
                 <li>Messaging system Feature with Multi-modal conversations (text, audio, image, video, file attachments) which facilitated direct communication between students and teachers</li>
@@ -76,13 +78,12 @@
                 </li>
             </h5>
             </ul>
-        </div>
-    </section>
-    <section id="certificates">
-        <div class="container" style="color: #dad5d5">
+            <br>
+
             <h2>English Level Test Website</h2>
-            <h5>The English Level Test Website which has been a connection with LMS offers a comprehensive assessment of language proficiency.               
-                <br>Developed the whole project and Include the following Features :</h5>
+            <h5>The English Level Test Website which has been a connection with LMS offers a comprehensive assessment of language proficiency.   
+                <p><strong>Tech Stack:</strong> HTML, CSS, Bootstrap, C# .NET MVC, Microsoft SQL Server</p>            
+                Developed the whole project and Include the following Features :</h5>
             <ul><h5>
                 <li>
                     Upload Feature for Question Type - Audio, Video, Image and Text From LMS
@@ -100,22 +101,18 @@
         </div>
     </section>
       
-    <footer>
-        <div class="container" style="text-align: center;">
-            <div class="common-info-icon">
-                <a href="mailto:naung3036@gmail.com" style="text-decoration: underline !important;"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="common-info-icon">
-                <a target="_blank" style="text-decoration: underline !important;" href="https://www.linkedin.com/in/naung-lin-shein-a41459227/"><i class="fa fa-linkedin"></i></a>
-            </div>
-            <div class="common-info-icon">
-                <a style="text-decoration: underline !important;" href="https://github.com/naunglinshein" target="_blank"><i class="fa fa-github"></i></a>
-            </div>
-            <div>
-                © Copyright 2024 Naung Lin Shein
-            </div>
-            <br>
-        </div>
-    </footer>  
+    <div id="footer"></div>
+    <script>
+        fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+            const yearSpan = document.getElementById("year");
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+    <script type="text/javascript" src="../js/common.js"></script>
 </body>
 </html>
