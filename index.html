@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <div class="scroll-up-btn">
+    <a href="#home" class="scroll-up-btn">
         <i class="fas fa-angle-up scroll-up-icon"></i>
-    </div>
+    </a>
     <div id="banner">
         <nav class="navbar navbar-expand-md fixed-top  navbar-default pt-3">
             <div class="container">
@@ -55,7 +55,7 @@
                         <span id="typing-text"></span>
                         <span id="cursor">|</span>
                     </div>
-                    <p><button class="btn btn-dark homeBtn"><a onclick="downloadFile('https://naunglinshein.github.io/documents/NaungLinShein@Resume.pdf','NaungLinShein@Resume.pdf')">Resume <i class="fa fa-download"></i></a></button> <span class="wall">|</span> <button class="btn btn-dark homeBtn"><a href="#contact">Contact</a></button></p>
+                    <p><button class="btn btn-dark homeBtn"><a onclick="downloadFile('NaungLinShein@Resume.pdf')">Resume <i class="fa fa-download"></i></a></button> <span class="wall">|</span> <button class="btn btn-dark homeBtn"><a href="#contact">Contact</a></button></p>
                     <br>
                 </div>
             </div>
@@ -162,35 +162,35 @@
                     <div class="tpn_card ">
                         <img src="images/projects/BGExperience1.jpg"  />
                         <h5>Office Administration and Control Systems</h5>
-                        <a target="_blank" href="pages/BestGuide@WorkingExperience.html" class="btn tpn_btn">Learn More</a>
+                        <a target="_blank" href="experience/bestguide/" class="btn tpn_btn">Learn More</a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="tpn_card ">
                         <img src="images/projects/GYSExperience1.jpg"  />
                         <h5>E-Learning & Other Management Systems</h5>
-                        <a target="_blank" href="pages/GYS@WorkingExperience.html" class="btn tpn_btn">Learn More</a>
+                        <a target="_blank" href="experience/gys/" class="btn tpn_btn">Learn More</a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="tpn_card ">
                         <img src="images/projects/MITExperience1.jpg"  />
                         <h5>ERP & Other Management Systems</h5>
-                        <a target="_blank" href="pages/MIT@WorkingExperience.html" class="btn tpn_btn">Learn More</a>
+                        <a target="_blank" href="experience/mit/" class="btn tpn_btn">Learn More</a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="tpn_card ">
                         <img src="images/projects/Freelance.png"  />
                         <h5>freelance</h5>
-                        <a target="_blank" href="pages/Freelance@WorkingExperience.html" class="btn tpn_btn">Learn More</a>
+                        <a target="_blank" href="experience/freelance/" class="btn tpn_btn">Learn More</a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="tpn_card ">
                         <img src="images/projects/OwnERPLogin.PNG"  />
                        <h5>Own ERP System (In Progress)</h5>
-                        <a target="_blank" href="pages/Own.html" class="btn tpn_btn">Learn More</a>
+                        <a target="_blank" href="experience/personal/" class="btn tpn_btn">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -345,17 +345,7 @@
             Development is currently in progress. Please check back later.
           </div>
       </div> -->
-    <script>
-        fetch("./footer.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-            const yearSpan = document.getElementById("year");
-            if (yearSpan) {
-                yearSpan.textContent = new Date().getFullYear();
-            }
-        });
-    </script>
+    
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
 </body>

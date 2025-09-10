@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(skillsSection);
 });
 
-function downloadFile(filePath,fileName) {
-    fetch(filePath)
+function downloadFile(fileName) {
+    fetch('https://www.naunglinshein.com/documents/NaungLinShein@Resume.pdf')
     .then(response => response.blob())
     .then(blob => {
         const link = document.createElement('a');

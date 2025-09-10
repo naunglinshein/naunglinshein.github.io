@@ -7,11 +7,19 @@ $(document).ready(function () {
     }
   });
 
-  $(".scroll-up-btn").click(function () {
-    $("html").animate({ scrollTop: 0 });
-    $("html").css("scrollBehavior", "auto");
-  });
+  // $(".scroll-up-btn").click(function () {
+  //   $("html").animate({ scrollTop: 0 });
+  //   $("html").css("scrollBehavior", "smooth");
+  // });
 
 });
 
-
+fetch("/footer.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
