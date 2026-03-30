@@ -1,86 +1,321 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelance Working Experience</title>
-    <link rel="icon" href="data:,">
-    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
-    <script type="text/javascript" src="/bootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/58ec7c6d3d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/experience.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <script type="text/javascript" src="/bootstrap/js/jquery.min.js"></script>
-</head>
-<body>
-    <a href="#top" class="scroll-up-btn">
-        <i class="fas fa-angle-up scroll-up-icon"></i>
-    </a>
-    <div id="top">
-        <section id="erp">
-            <div class="container-fluid" style="color: #dad5d5;">
-                <h2>Trading Platform</h2>
-                <h5>A backend system for trading products where every user can buy and sell items, with automated order management and wallet-based payment functionality.</h5>
-                <p><strong>Tech Stack:</strong> Go, Gin, MySQL, Redis</p>
-                <ul>
-                    <h5>
-                        <li>Developed APIs to allow users to buy and sell products, including viewing sold and purchased products with status updates.</li>
-                        <li>Implemented automatic order cancellation if payment is not completed within a specified time using Redis.</li>
-                        <li>Enabled CRUD operations for sellers on their products and order management (edit, cancel, delete).</li>
-                        <li>Enabled buyers to manage orders, including receive, cancel, and make payments.</li>
-                        <li>Implemented transaction logs for users, tracking refunds, order costs, and cancellations.</li>
-                        <li>Implemented user collections to save favorite products.</li>
-                    </h5>
-                </ul>
-                <br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelance Product Delivery | Naung Lin Shein</title>
+    <meta
+      name="description"
+      content="Freelance software delivery case study covering trading platforms, media systems, microservices, and ERP-related product work by Naung Lin Shein."
+    />
+    <link rel="canonical" href="https://www.naunglinshein.com/experience/freelance/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Freelance Product Delivery | Naung Lin Shein" />
+    <meta
+      property="og:description"
+      content="Trading platforms, media systems, microservices, and ERP-related product delivery."
+    />
+    <meta
+      property="og:image"
+      content="https://www.naunglinshein.com/images/projects/Freelance.png"
+    />
+    <link rel="icon" type="image/png" href="/images/NaungLinSheinPhoto-circle.png" />
+    <link rel="shortcut icon" href="/images/NaungLinSheinPhoto-circle.png" />
+    <link rel="apple-touch-icon" href="/images/NaungLinSheinPhoto-circle.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/common.js" defer></script>
+  </head>
+  <body class="page-detail">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Naung Lin Shein portfolio home">
+          <span class="brand-mark" aria-hidden="true">NLS</span>
+          <span class="brand-copy">
+            <strong>Naung Lin Shein</strong>
+            <span>Software Engineer</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary" data-nav>
+          <a href="/#about">About</a>
+          <a href="/#experience">Experience</a>
+          <a href="/#projects">Project</a>
+          <a href="/resume/">Resume</a>
+          <a href="/#contact" class="nav-cta">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-                <h2>Comics & Short-Video Platform</h2>
-                <h5>Backend system for streaming comics and short drama videos with subtitle support, along with user history and collection management.</h5>
-                <p><strong>Tech Stack:</strong> Go, Gin, MySQL</p>
-                <ul>
-                    <h5>
-                        <li>Developed APIs for users to browse and filter comics and videos.</li>
-                        <li>Enabled video playback with multiple subtitles and detailed comic/video views.</li>
-                        <li>Tracked user history for comics and videos.</li>
-                        <li>Implemented collections for comics and videos for user convenience.</li>
-                    </h5>
-                </ul>
-                <br>
-
-                <h2>Microservices & API Gateway</h2>
-                <h5>Refactored existing REST APIs into microservices architecture with GRPC gateway for better scalability and maintainability.</h5>
-                <p><strong>Tech Stack:</strong> Go, Gin, MySQL</p>
-                <ul>
-                    <h5>
-                        <li>Developed all product-related CRUD APIs in microservices.</li>
-                        <li>Implemented system operation record management APIs (CRUD).</li>
-                        <li>Created import/export templates with Excel handling for data management.</li>
-                        <li>Developed email services and dictionary management APIs.</li>
-                    </h5>
-                </ul>
-                <br>
-
-                <h2>ERP System</h2>
-                <h5>Full-stack ERP development with features for financial reporting, POS enhancements, inventory management, and frontend design improvements.</h5>
-                <p><strong>Tech Stack:</strong> PHP, Laravel, MySQL, JavaScript, HTML, CSS (Full-Stack)</p>
-                <ul>
-                    <h5>
-                        <li>Added financial reports with import/export support in Excel.</li>
-                        <li>Implemented discounts across forms including SI and POS sales.</li>
-                        <li>Enhanced POS sales form design and print slips with new values like discount amount.</li>
-                        <li>Added features for points management in SI and POS transactions.</li>
-                        <li>Developed stock reports with reorder calculations based on transactions and min/max quantities.</li>
-                        <li>Fixed multiple bugs and improved system functionality.</li>
-                        <li>Frontend improvements: updated POS sales forms, redesigned interfaces, and enhanced user experience for order and stock management.</li>
-                    </h5>
-                </ul>
+    <main id="main">
+      <section class="section detail-hero">
+        <div class="container detail-hero-layout detail-hero-layout--single">
+          <div class="detail-copy surface-card" data-reveal>
+            <p class="eyebrow">Freelance Case Study</p>
+            <h1 class="display display--detail">Product delivery across marketplaces, media, and ERP systems.</h1>
+            <p class="lede">
+              Freelance work centered on building and improving production software
+              for client products. The scope ranged from marketplace and media
+              platforms to microservices refactoring, ERP core systems, and
+              delivery-related workflows.
+            </p>
+            <div class="button-row">
+              <a class="button button--primary" href="/">Back to portfolio</a>
+              <a class="button button--secondary" href="/resume/">View resume</a>
+              <a class="button button--accent" href="mailto:naung3036@gmail.com">
+                Start a conversation
+              </a>
             </div>
+            <ul class="detail-metrics">
+              <li>
+                <strong>5 major tracks</strong>
+                <span>marketplaces, media, microservices, ERP, automation</span>
+              </li>
+              <li>
+                <strong>Go, Spring, Angular</strong>
+                <span>backend plus full-stack delivery</span>
+              </li>
+              <li>
+                <strong>Client-focused</strong>
+                <span>production features and operational logic</span>
+              </li>
+            </ul>
+          </div>
 
-        </section>
-    </div>
-    
-    <div id="footer"></div>
-    <script type="text/javascript" src="/js/common.js"></script>
-</body>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container">
+          <div class="detail-overview">
+            <article class="detail-overview-card surface-card" data-reveal>
+              <h2>Overview</h2>
+              <p>
+                This work combined backend API design, business-rule implementation,
+                data workflows, ERP core-system design, and targeted interface
+                improvements across multiple products. The common thread was
+                production delivery: shipping features that solve real operational
+                problems for users and teams.
+              </p>
+              <p>
+                In addition to the public-facing items below, the broader freelance
+                scope also included private client work related to delivery-service
+                workflows and system customization.
+              </p>
+            </article>
+
+            <article class="detail-overview-card surface-card" data-reveal>
+              <h2>Core stack</h2>
+              <ul class="tag-list">
+                <li>Go</li>
+                <li>Gin</li>
+                <li>MySQL</li>
+                <li>Redis</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>Angular</li>
+                <li>Spring Boot</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+                <li>Keycloak</li>
+                <li>REST APIs</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Projects Delivered</p>
+            <h2>Representative systems from freelance work.</h2>
+            <p>
+              The descriptions below are rewritten for clarity, but the scope and
+              responsibilities remain based on the original portfolio content.
+            </p>
+          </div>
+
+          <div class="story-grid">
+            <article class="story-card" data-reveal>
+              <div class="detail-section-meta">
+                <span>Trading platform</span>
+                <span>Go, Gin, MySQL, Redis</span>
+              </div>
+              <h3>User-to-user buying and selling platform</h3>
+              <p>
+                Backend system for product trading with wallet-based payment flow,
+                seller controls, buyer order actions, and automated order handling.
+              </p>
+              <ul class="clean-list">
+                <li>Built APIs for listing, buying, and selling products with status tracking.</li>
+                <li>Implemented automatic unpaid-order cancellation using Redis.</li>
+                <li>Added seller-side CRUD and order management capabilities.</li>
+                <li>Enabled buyer-side receive, cancel, and payment actions.</li>
+                <li>Created transaction logs covering refunds, order cost, and cancellations.</li>
+                <li>Implemented user collections for saved products.</li>
+              </ul>
+            </article>
+
+            <article class="story-card" data-reveal>
+              <div class="detail-section-meta">
+                <span>Media platform</span>
+                <span>Go, Gin, MySQL</span>
+              </div>
+              <h3>Comics and short-video platform</h3>
+              <p>
+                Backend work for a content platform supporting browsing, filtering,
+                playback, subtitles, history tracking, and user collections.
+              </p>
+              <ul class="clean-list">
+                <li>Developed APIs for browsing and filtering comics and videos.</li>
+                <li>Enabled subtitle-aware playback and detailed content views.</li>
+                <li>Tracked user viewing and reading history.</li>
+                <li>Implemented content collections for easier access to favorites.</li>
+              </ul>
+            </article>
+
+            <article class="story-card" data-reveal>
+              <div class="detail-section-meta">
+                <span>ERP core system</span>
+                <span>Bol.com marketplace integration</span>
+                <span>Angular, Spring Boot, PostgreSQL</span>
+              </div>
+              <h3>Custom ERP Core System with Marketplace Integration (Bol.com)</h3>
+              <p>
+                Designed and developed a custom ERP core system integrating
+                inventory, finance, forecasting, and marketplace data into one
+                operational workflow.
+              </p>
+              <ul class="clean-list">
+                <li>Implemented stock management, accounting, cashflow forecasting, and margin calculation modules.</li>
+                <li>Integrated with the Bol.com Retailer API for automatic product, price, and commission synchronization.</li>
+                <li>Built automated scheduler processes for data sync, forecasting, and financial calculations.</li>
+                <li>Developed finance features covering balance, profit and loss, VAT, tax payments and receipts, auto-accounting, and snapshots.</li>
+                <li>Implemented forecasting logic using historical and predicted sales data for stock and cashflow planning.</li>
+                <li>Created automated workflows for stock planning, cashflow prediction, and accounting operations.</li>
+                <li>Implemented role-based access, email notifications, background job processing, and flowchart-based business workflow design.</li>
+              </ul>
+            </article>
+
+            <article class="story-card" data-reveal>
+              <div class="detail-section-meta">
+                <span>ERP system</span>
+                <span>Laravel, MySQL, JavaScript</span>
+              </div>
+              <h3>ERP enhancements and POS improvements</h3>
+              <p>
+                Full-stack work on ERP features, financial reports, POS behavior,
+                stock calculations, and usability improvements across business forms.
+              </p>
+              <ul class="clean-list">
+                <li>Added financial reports with Excel import and export support.</li>
+                <li>Implemented discounts across SI and POS sales flows.</li>
+                <li>Improved POS sales forms and print slips with discount details.</li>
+                <li>Added points-management features for SI and POS transactions.</li>
+                <li>Delivered stock reports with reorder calculations based on activity and thresholds.</li>
+                <li>Fixed bugs and improved overall system behavior and interface quality.</li>
+              </ul>
+            </article>
+
+            <article class="story-card" data-reveal>
+              <div class="detail-section-meta">
+                <span>Architecture</span>
+                <span>Microservices and gateway</span>
+              </div>
+              <h3>Microservices and API gateway refactoring</h3>
+              <p>
+                Refactored existing REST APIs into a microservices-oriented setup to
+                improve scale, maintainability, and service separation.
+              </p>
+              <ul class="clean-list">
+                <li>Moved product-related CRUD APIs into service boundaries.</li>
+                <li>Implemented operation-record management APIs.</li>
+                <li>Created Excel-based import and export templates for data handling.</li>
+                <li>Delivered supporting email services and dictionary APIs.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-band">
+        <div class="container">
+          <div class="cta-band-inner surface-card" data-reveal>
+            <div>
+              <p class="eyebrow">Next Step</p>
+              <h2>Need someone who can own backend and business workflow delivery?</h2>
+            </div>
+            <div class="button-row">
+              <a class="button button--accent" href="mailto:naung3036@gmail.com">
+                Contact me
+              </a>
+              <a class="button button--secondary" href="/#projects">See more work</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">More Case Studies</p>
+            <h2>Related portfolio pages.</h2>
+          </div>
+          <div class="more-grid">
+            <article class="more-card surface-card" data-reveal>
+              <h3>MIT enterprise systems</h3>
+              <p>ERP, licensing, database control, reporting, and asset management.</p>
+              <a class="link-arrow" href="/experience/mit/">Open MIT case study</a>
+            </article>
+            <article class="more-card surface-card" data-reveal>
+              <h3>GYS learning platforms</h3>
+              <p>LMS-connected platforms, messaging, dashboards, and testing products.</p>
+              <a class="link-arrow" href="/experience/gys/">Open GYS case study</a>
+            </article>
+            <article class="more-card surface-card" data-reveal>
+              <h3>Own ERP and POS system</h3>
+              <p>Independent product build focused on modular business workflows.</p>
+              <a class="link-arrow" href="/experience/personal/">Open personal project</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner surface-card">
+          <p>&copy; <span data-year></span> Naung Lin Shein. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="mailto:naung3036@gmail.com">Email</a>
+            <a
+              href="https://www.linkedin.com/in/naung-lin-shein-a41459227/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/naunglinshein"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

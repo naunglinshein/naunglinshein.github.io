@@ -1,0 +1,303 @@
+:root {
+  --paper: #ffffff;
+  --ink: #172433;
+  --ink-soft: #425162;
+  --muted: #667384;
+  --line: rgba(23, 36, 51, 0.16);
+  --accent: #0f4961;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: #eef2f6;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resume-shell {
+  width: min(100%, 1080px);
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.resume-actions a,
+.resume-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  padding: 0.75rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.resume-actions .primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.resume-sheet {
+  margin: 0 auto;
+  max-width: 210mm;
+  min-height: 297mm;
+  padding: 16mm;
+  background: var(--paper);
+  box-shadow: 0 24px 72px rgba(23, 36, 51, 0.12);
+}
+
+.resume-header {
+  display: grid;
+  gap: 0.45rem;
+  padding-bottom: 0.2rem;
+}
+
+.resume-name {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.04;
+  font-weight: 700;
+}
+
+.resume-role {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.resume-contact {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.resume-contact a {
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
+.resume-contact > * {
+  display: inline;
+}
+
+.resume-contact > *:not(:last-child)::after {
+  content: " | ";
+  color: var(--muted);
+}
+
+.resume-sheet a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1.15px;
+  text-underline-offset: 0.16em;
+}
+
+.resume-sheet a:hover {
+  color: #0b3f53;
+}
+
+.resume-sheet a:focus-visible {
+  outline: 2px solid rgba(15, 73, 97, 0.28);
+  outline-offset: 2px;
+}
+
+.resume-section {
+  display: grid;
+  gap: 0.92rem;
+  padding-top: 2.35rem;
+}
+
+.resume-section-title {
+  margin: 0;
+  padding-bottom: 0.42rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resume-copy,
+.resume-keywords p,
+.resume-list li,
+.plain-list li {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+}
+
+.resume-keywords {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.experience-item {
+  display: grid;
+  gap: 0.24rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  break-inside: avoid;
+}
+
+.experience-item--plain {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.resume-section .experience-item:first-of-type {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.experience-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.18rem 1rem;
+}
+
+.experience-header h3,
+.meta-block h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.experience-company {
+  margin: 0.05rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.experience-header time {
+  color: var(--muted);
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.experience-link {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.18rem 0.35rem;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.32;
+}
+
+.experience-link span {
+  color: var(--muted);
+}
+
+.experience-link a {
+  display: inline-block;
+  word-break: break-word;
+}
+
+.resume-list,
+.plain-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.resume-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+}
+
+.meta-block {
+  display: grid;
+  gap: 0.35rem;
+}
+
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+@media screen and (max-width: 760px) {
+  .resume-shell {
+    padding: 1rem 0.65rem 2rem;
+  }
+
+  .resume-sheet {
+    padding: 1.15rem;
+  }
+
+  .resume-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 0.12rem;
+  }
+
+  .experience-header time {
+    white-space: normal;
+  }
+
+  .experience-link {
+    gap: 0.12rem 0.25rem;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .resume-shell {
+    width: auto;
+    max-width: none;
+    padding: 0;
+  }
+
+  .resume-actions {
+    display: none;
+  }
+
+  .resume-sheet {
+    max-width: none;
+    min-height: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+}

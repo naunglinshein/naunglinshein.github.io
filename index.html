@@ -1,352 +1,528 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naung Lin Shein - Portfolio</title>
-    <link rel="icon" href="images/NaungLinSheinPhoto-circle.png">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/58ec7c6d3d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <a href="#home" class="scroll-up-btn">
-        <i class="fas fa-angle-up scroll-up-icon"></i>
-    </a>
-    <div id="banner">
-        <nav class="navbar navbar-expand-md fixed-top  navbar-default pt-3">
-            <div class="container">
-                <button class="navbar-toggler navbar-dark drop-down" data-toggle="collapse" data-target="#mynav">
-		    		<span class="navbar-toggler-icon" ></span>
-		    	</button>
-                <div class="collapse navbar-collapse" id="mynav">
-                    <ul class="navbar-nav ml-auto" id="nav-bar">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link pr-3">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about-me" class="nav-link pr-3">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#skills" class="nav-link pr-3">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#projects" class="nav-link pr-3">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#certificates" class="nav-link pr-3">Certificates</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naung Lin Shein | Software Engineer Portfolio</title>
+    <meta
+      name="description"
+      content="Naung Lin Shein is a Full-Stack Software Engineer building reliable business applications, enterprise systems, and practical product software."
+    />
+    <meta name="theme-color" content="#17304d" />
+    <meta name="author" content="Naung Lin Shein" />
+    <link rel="canonical" href="https://www.naunglinshein.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Naung Lin Shein | Software Engineer Portfolio" />
+    <meta
+      property="og:description"
+      content="Full-Stack Software Engineer building reliable business applications, enterprise systems, and practical product software."
+    />
+    <meta property="og:url" content="https://www.naunglinshein.com/" />
+    <meta
+      property="og:image"
+      content="https://www.naunglinshein.com/images/NaungLinSheinPhoto.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Naung Lin Shein | Software Engineer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Full-Stack Software Engineer building reliable business applications, enterprise systems, and practical product software."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.naunglinshein.com/images/NaungLinSheinPhoto.png"
+    />
+    <link rel="icon" type="image/png" href="/images/NaungLinSheinPhoto-circle.png" />
+    <link rel="shortcut icon" href="/images/NaungLinSheinPhoto-circle.png" />
+    <link rel="apple-touch-icon" href="/images/NaungLinSheinPhoto-circle.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Naung Lin Shein",
+        "url": "https://www.naunglinshein.com/",
+        "image": "https://www.naunglinshein.com/images/NaungLinSheinPhoto.png",
+        "jobTitle": "Software Engineer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Da Nang",
+          "addressCountry": "Vietnam"
+        },
+        "email": "mailto:naung3036@gmail.com",
+        "telephone": "0343401332",
+        "sameAs": [
+          "https://www.linkedin.com/in/naung-lin-shein-a41459227/",
+          "https://github.com/naunglinshein"
+        ],
+        "knowsAbout": [
+          "ERP",
+          "Backend Services",
+          "Microservices",
+          "Learning Platforms",
+          "Java",
+          "Spring Boot",
+          "Go",
+          ".NET",
+          "Angular",
+          "SQL"
+        ]
+      }
+    </script>
+    <script src="/js/common.js" defer></script>
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body class="page-home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Naung Lin Shein portfolio home">
+          <span class="brand-mark" aria-hidden="true">NLS</span>
+          <span class="brand-copy">
+            <strong>Naung Lin Shein</strong>
+            <span>Software Engineer</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary" data-nav>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Project</a>
+          <a href="#certificates">Certifications</a>
+          <a href="/resume/">Resume</a>
+          <a href="#contact" class="nav-cta">Contact</a>
         </nav>
-        <div class="container d-flex flex-column align-items-start" id="home">
-            <div class="text-show-case">
-                <div class="text-case ">
-                    <div class="homeName">Hello, I am Naung Lin Shein</div>
-                    <div class="homePosition">
-                        <span id="typing-text"></span>
-                        <span id="cursor">|</span>
-                    </div>
-                    <p><button class="btn btn-dark homeBtn"><a onclick="downloadFile('NaungLinShein@Resume.pdf')">Resume <i class="fa fa-download"></i></a></button> <span class="wall">|</span> <button class="btn btn-dark homeBtn"><a href="#contact">Contact</a></button></p>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="about-me" id="about-me">
-        <div class="container">
-          <div class="about-me-container">
-            <div class="about-me-flex-container">
-              <div class="about-me-content">
-                <div class="about-me-title">
-                    About Me
-                </div>
-                <div class="text">
-                    Hello, I’m Naung Lin Shein, a dedicated computer science professional and freelance web/software developer originally from Myanmar. My journey into the world of technology began in 2015 when I embarked on my studies at the Computer University, where I specialized in computer science.
-                    <br><br>
-                    With over 5 years of hands-on experience, I’ve honed my skills and expertise in various aspects of computer science. As a freelancer, I collaborate with clients on web development and software engineering projects, delivering high-quality solutions tailored to their needs. My passion for technology, coupled with my academic background and practical experience, drives me to continuously seek opportunities for growth and innovation in this ever-evolving industry. 
-                    <br><br>
-                    Below, you can explore my professional experience, projects, and technical skills that showcase my expertise.
-                </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section hero" id="top">
+        <div class="container hero-layout">
+          <div class="hero-copy surface-card" data-reveal>
+            <div class="hero-head">
+              <div class="hero-head-copy">
+                <p class="eyebrow">Software Engineer</p>
+              </div>
+              <div class="hero-avatar">
+                <img
+                  src="/images/NaungLinSheinPhoto.png"
+                  alt="Portrait of Naung Lin Shein"
+                />
               </div>
             </div>
+            <h1 class="display">Full-Stack Software Engineer building reliable business applications.</h1>
+            <p class="lede">
+              I build and improve full-stack web applications, internal tools, and
+              business software with a practical focus on reliability, usability,
+              and maintainable delivery.
+            </p>
+            <div class="hero-rotator">
+              <span class="hero-rotator-label">Focused on</span>
+              <span class="rotator-text" data-rotator aria-live="polite">ERP platforms</span>
+            </div>
+            <div class="button-row">
+              <a class="button button--primary" href="/resume/">View resume</a>
+              <a class="button button--secondary" href="#experience">Explore case studies</a>
+              <a class="button button--accent" href="mailto:naung3036@gmail.com">Email me</a>
+            </div>
+            <ul class="metric-list">
+              <li>
+                <strong>5+ years</strong>
+                <span>hands-on software delivery</span>
+              </li>
+              <li>
+                <strong>ERP to LMS</strong>
+                <span>multi-domain product experience</span>
+              </li>
+              <li>
+                <strong>Go, Java, .NET, Angular</strong>
+                <span>full-stack delivery and business workflows</span>
+              </li>
+              <li>
+                <strong>SQL and reporting</strong>
+                <span>operations, exports, and automation</span>
+              </li>
+            </ul>
           </div>
         </div>
-    </section>
-    <section id="skills">
-        <div class="main-box-container">
-            <div class="container">
-            <div class="about-me-title">Skills</div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>HTML | CSS</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>Angular | jQuery</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>JavaScript</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>Bootstrap</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>Java | Spring Boot</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>ASP.Net | C#</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>Microsoft SQL</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>PostgreSQL</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>MySQL | Redis</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>AWS</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>Azure</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>SmarterASP</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>Docker & Tomcat</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>JasperReports</h3></div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="box-container"><h3>Go & Gin</h3></div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
+      </section>
 
-    <section id="projects">
-            <div class="demo_title">
-                <div class="about-me-title">
-                    Projects
-                </div>
-            </div>
-            <div class="container-fluid mt-4">
-              <div class="row">
-                <div class="col-lg-4">
-                    <div class="tpn_card ">
-                        <img src="images/projects/FoodAndDrink_Home1.PNG"  />
-                        <h5>Jarvis - Food And Drink Project</h5>
-                        <a href="https://naunglinshein.github.io/Jarvis-FoodAndDrink" target="_blank" class="btn tpn_btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="tpn_card ">
-                        <img src="images/projects/Trust_Home_Menu.PNG"  />
-                        <h5>Trust - Delivery Service Project</h5>
-                        <a class="btn tpn_btn">Not Available</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="tpn_card ">
-                        <img src="images/projects/BGExperience1.jpg"  />
-                        <h5>Office Administration and Control Systems</h5>
-                        <a target="_blank" href="experience/bestguide/" class="btn tpn_btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="tpn_card ">
-                        <img src="images/projects/GYSExperience1.jpg"  />
-                        <h5>E-Learning & Other Management Systems</h5>
-                        <a target="_blank" href="experience/gys/" class="btn tpn_btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="tpn_card ">
-                        <img src="images/projects/MITExperience1.jpg"  />
-                        <h5>ERP & Other Management Systems</h5>
-                        <a target="_blank" href="experience/mit/" class="btn tpn_btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="tpn_card ">
-                        <img src="images/projects/Freelance.png"  />
-                        <h5>freelance</h5>
-                        <a target="_blank" href="experience/freelance/" class="btn tpn_btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="tpn_card ">
-                        <img src="images/projects/OwnERPLogin.PNG"  />
-                       <h5>Own ERP System (In Progress)</h5>
-                        <a target="_blank" href="experience/personal/" class="btn tpn_btn">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="certificates">
-        <div class="about-me-title">
-            Certificates
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex align-items-center justify-content-center">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front">
-                            <img src="images/certificates/FE@ITPEC.PNG"  >
-                          </div>
-                          <div class="flip-box-back">
-                            <h2>Fundamental Information Technology Engineer Examination (FE)</h2>
-                            <p><button class="btn btn-dark homeBtn"><a onclick="downloadFile('https://naunglinshein.github.io/documents/ITPEC@Certificate.pdf','NaungLinShein_ITPEC@Certificate.pdf')">Download <i class="fa fa-download"></i></a></button> <button class="btn btn-dark homeBtn" onclick="previewFile('images/certificates/FE@ITPEC.PNG')"><a>Preview</a></button></p>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex align-items-center justify-content-center">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front">
-                            <img src="images/certificates/PHP.PNG"  >
-                          </div>
-                          <div class="flip-box-back">
-                            <h2>PHP Web Developer Bootcamp</h2>
-                            <p><button class="btn btn-dark homeBtn"><a onclick="downloadFile('https://naunglinshein.github.io/documents/PHP@Certificate.pdf','NaungLinShein_PHP@Certificate.pdf')">Download <i class="fa fa-download"></i></a></button> <button class="btn btn-dark homeBtn" onclick="previewFile('images/certificates/PHP.PNG')"><a>Preview</a></button></p>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex align-items-center justify-content-center">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front">
-                            <img src="images/certificates/Internship@certificate.PNG"  >
-                          </div>
-                          <div class="flip-box-back">
-                            <h2>Internship</h2>
-                            <p><button class="btn btn-dark homeBtn"><a onclick="downloadFile('https://naunglinshein.github.io/documents/PHP@Certificate.pdf','Internship@certificate.pdf')">Download <i class="fa fa-download"></i></a></button> <button class="btn btn-dark homeBtn" onclick="previewFile('images/certificates/Internship@certificate.PNG')"><a>Preview</a></button></p>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex align-items-center justify-content-center">
-                    
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex align-items-center justify-content-center">
-                    
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex align-items-center justify-content-center">
-                    
-                </div>
-            </div>
-        </div>
-        
-        
-    </section>
-
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModel()">&times;</span>
-        <img class="modal-content" id="img01">
-    </div>
-
-    <section id="contact">
-        <div class="section-header">
-          <div class="container">
-            <div class="about-me-title">
-                Contact
-            </div>
-          </div>
-        </div>
-        
+      <section class="section section--soft" id="about">
         <div class="container">
-          <div class="row">
-            <div class="contact-info col-md-6 col-md-6">
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <i class="fas fa-home"></i>
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">About</p>
+            <h2>Full-Stack Software Engineer with over 5 years of hands-on experience.</h2>
+            <p>
+              I am a Full-Stack Software Engineer from Myanmar, currently based
+              in Vietnam. I started my journey in technology through computer
+              science studies in 2015 and have since built web applications,
+              internal tools, and software solutions across freelance and
+              professional environments.
+            </p>
+            <p>
+              My work focuses on practical full-stack delivery, maintainable
+              systems, and solutions tailored to real business needs. This
+              portfolio highlights the experience, projects, and technical skills
+              that reflect that journey.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="experience">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Experience</p>
+            <h2>Case studies across freelance, enterprise, and education domains.</h2>
+            <p>
+              Each track below leads to a dedicated page with the actual systems and
+              responsibilities already present in the original portfolio content.
+            </p>
+          </div>
+
+          <div class="timeline-grid">
+            <article class="timeline-card" data-reveal>
+              <div class="timeline-head">
+                <p class="eyebrow">Freelance</p>
+                <p class="timeline-date">
+                  <time datetime="2024-04">April 2024</time> -
+                  <time datetime="2026-03">March 2026</time>
+                </p>
+              </div>
+              <p class="timeline-company">Freelance client projects</p>
+              <p class="timeline-role">Senior Full-Stack Engineer</p>
+              <h3>Product delivery across marketplaces, media, and ERP systems</h3>
+              <p>
+                Hands-on backend and full-stack delivery for client products,
+                including marketplace integration, media platforms,
+                microservices, ERP core systems, and business automation.
+              </p>
+              <div class="timeline-summary">
+                <span>Go</span>
+                <span>Spring Boot</span>
+                <span>Angular</span>
+                <span>Laravel</span>
+              </div>
+              <a class="link-arrow" href="/experience/freelance/">View case study</a>
+            </article>
+
+            <article class="timeline-card" data-reveal>
+              <div class="timeline-head">
+                <p class="eyebrow">MIT</p>
+                <p class="timeline-date">
+                  <time datetime="2023-02">February 2023</time> -
+                  <time datetime="2024-04">April 2024</time>
+                </p>
+              </div>
+              <p class="timeline-company">
+                <a href="https://www.mit.com.mm/" target="_blank" rel="noopener noreferrer">
+                  Myanmar Information Technology
+                </a>
+              </p>
+              <p class="timeline-role">Mid-Senior Full-Stack Engineer</p>
+              <h3>ERP, licensing, database control, and asset systems</h3>
+              <p>
+                Delivered enterprise software features, reporting, database
+                automation, security controls, and operational improvements for
+                business teams.
+              </p>
+              <div class="timeline-summary">
+                <span>Java Spring</span>
+                <span>Angular</span>
+                <span>SQL Server</span>
+                <span>JasperReports</span>
+              </div>
+              <a class="link-arrow" href="/experience/mit/">View case study</a>
+            </article>
+
+            <article class="timeline-card" data-reveal>
+              <div class="timeline-head">
+                <p class="eyebrow">GYS</p>
+                <p class="timeline-date">
+                  <time datetime="2022-01">January 2022</time> -
+                  <time datetime="2022-08">August 2022</time>
+                </p>
+              </div>
+              <p class="timeline-company">
+                <a href="https://gys.com.mm/" target="_blank" rel="noopener noreferrer">
+                  GYS Online Classes
+                </a>
+              </p>
+              <p class="timeline-role">Backend Engineer</p>
+              <h3>Learning platforms, LMS connections, and testing products</h3>
+              <p>
+                Built web applications supporting course delivery, messaging,
+                meetings, dashboards, and English testing connected to learning
+                workflows.
+              </p>
+              <div class="timeline-summary">
+                <span>C# .NET MVC</span>
+                <span>Bootstrap</span>
+                <span>SQL Server</span>
+                <span>LMS workflows</span>
+              </div>
+              <a class="link-arrow" href="/experience/gys/">View case study</a>
+            </article>
+
+            <article class="timeline-card" data-reveal>
+              <div class="timeline-head">
+                <p class="eyebrow">BestGuide</p>
+                <p class="timeline-date">
+                  <time datetime="2020-11">November 2020</time> -
+                  <time datetime="2021-12">December 2021</time>
+                </p>
+              </div>
+              <p class="timeline-company">
+                <a href="https://www.bestguide.biz/" target="_blank" rel="noopener noreferrer">
+                  Best Guide
+                </a>
+              </p>
+              <p class="timeline-role">Full-Stack Developer</p>
+              <h3>Office operations, tutoring workflows, and staff tooling</h3>
+              <p>
+                Developed systems for order handling, teacher matching, staff
+                activity submission, balances, and workflow visibility.
+              </p>
+              <div class="timeline-summary">
+                <span>C# .NET MVC</span>
+                <span>SQL Server</span>
+                <span>Office workflows</span>
+                <span>Web apps</span>
+              </div>
+              <a class="link-arrow" href="/experience/bestguide/">View case study</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Project</p>
+            <h2>Standalone product work outside the experience timeline.</h2>
+            <p>
+              Employer-based systems already appear in the experience section.
+              This area stays focused on your own product work so the homepage
+              does not repeat the same case studies twice.
+            </p>
+          </div>
+
+          <div class="project-grid project-grid--single">
+            <article class="project-card project-card--text" data-reveal>
+              <div class="project-meta">
+                <span>Independent product</span>
+                <span>ERP in progress</span>
+              </div>
+              <h3>Own ERP and POS system</h3>
+              <p>
+                Personal product in active development with modular navigation,
+                master data, stock workflows, payment terms, and role management.
+              </p>
+              <a class="link-arrow" href="/experience/personal/#current-feature-set">
+                Open project details
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="certificates">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Certifications</p>
+            <h2>Supporting credentials that stay directly accessible.</h2>
+            <p>
+              Preview the certificate images or download the original PDFs. The new
+              version keeps the documents direct instead of routing them through
+              broken JavaScript handlers.
+            </p>
+          </div>
+
+          <div class="certificate-grid">
+            <article class="certificate-card" data-reveal>
+              <div class="certificate-head">
+                <div class="certificate-icon" aria-hidden="true"></div>
+                <div class="certificate-copy">
+                  <p class="certificate-type">Examination credential</p>
+                  <h3>ITPEC Fundamental Information Technology Engineer Examination</h3>
                 </div>
-                <div class="contact-info-content">
-                  <h4>Address</h4>
+              </div>
+              <p>Certification supporting core information technology knowledge.</p>
+              <div class="button-row certificate-actions">
+                <a
+                  class="button button--secondary"
+                  href="/images/certificates/FE@ITPEC.PNG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Preview image
+                </a>
+                <a
+                  class="button button--primary"
+                  href="/documents/ITPEC@Certificate.pdf"
+                  download
+                >
+                  Download PDF
+                </a>
+              </div>
+            </article>
+
+            <article class="certificate-card" data-reveal>
+              <div class="certificate-head">
+                <div class="certificate-icon" aria-hidden="true"></div>
+                <div class="certificate-copy">
+                  <p class="certificate-type">Course credential</p>
+                  <h3>PHP Web Developer Bootcamp</h3>
+                </div>
+              </div>
+              <p>Course certificate reflecting full-stack PHP development work.</p>
+              <div class="button-row certificate-actions">
+                <a
+                  class="button button--secondary"
+                  href="/images/certificates/PHP.PNG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Preview image
+                </a>
+                <a
+                  class="button button--primary"
+                  href="/documents/PHP@Certificate.pdf"
+                  download
+                >
+                  Download PDF
+                </a>
+              </div>
+            </article>
+
+            <article class="certificate-card" data-reveal>
+              <div class="certificate-head">
+                <div class="certificate-icon" aria-hidden="true"></div>
+                <div class="certificate-copy">
+                  <p class="certificate-type">Internship record</p>
+                  <h3>Internship certificate</h3>
+                </div>
+              </div>
+              <p>Internship documentation retained as part of the portfolio archive.</p>
+              <div class="button-row certificate-actions">
+                <a
+                  class="button button--secondary"
+                  href="/images/certificates/Internship@certificate.PNG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Preview image
+                </a>
+                <a
+                  class="button button--primary"
+                  href="/documents/Internship@certificate.pdf"
+                  download
+                >
+                  Download PDF
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-copy surface-card" data-reveal>
+              <p class="eyebrow">Contact</p>
+              <h2 class="display display--detail">Open to software roles and serious collaborations.</h2>
+              <p>
+                Email me directly or connect through LinkedIn and GitHub.
+              </p>
+              <div class="button-row">
+                <a class="button button--accent" href="mailto:naung3036@gmail.com">
+                  Send an email
+                </a>
+                <a class="button button--secondary" href="/resume/">View resume</a>
+              </div>
+            </div>
+
+            <div class="contact-aside surface-card" data-reveal>
+              <div class="contact-card-grid">
+                <article class="contact-card">
+                  <h3>Email</h3>
+                  <p>
+                    <a href="mailto:naung3036@gmail.com">naung3036@gmail.com</a>
+                  </p>
+                </article>
+                <article class="contact-card">
+                  <h3>LinkedIn</h3>
+                  <p>
+                    <a
+                      href="https://www.linkedin.com/in/naung-lin-shein-a41459227/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      naung-lin-shein-a41459227
+                    </a>
+                  </p>
+                </article>
+                <article class="contact-card">
+                  <h3>GitHub</h3>
+                  <p>
+                    <a
+                      href="https://github.com/naunglinshein"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      naunglinshein
+                    </a>
+                  </p>
+                </article>
+                <article class="contact-card">
+                  <h3>Location</h3>
                   <p>Da Nang, Vietnam</p>
-                </div>
+                </article>
               </div>
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                
-                <div class="contact-info-content">
-                  <h4>Phone</h4>
-                  <p>0343401332</p>
-                </div>
-              </div>
-              
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                
-                <div class="contact-info-content">
-                  <h4>Email</h4>
-                 <p><a href="mailto:naung3036@gmail.com" style="text-decoration: underline !important;">naung3036@gmail.com</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="contact-info col-md-6 col-md-6">
-                <div class="contact-info-item">
-                    <div class="contact-info-icon">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <div class="contact-info-content">
-                      <h4>Linkedin</h4>
-                      <p><a target="_blank" style="text-decoration: underline !important;" href="https://www.linkedin.com/in/naung-lin-shein-a41459227/">naung-lin-shein-a41459227</a></p>
-                    </div>
-                  </div>
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon">
-                        <i class="fa fa-github"></i>
-                    </div>
-                    
-                    <div class="contact-info-content">
-                      <h4>GitHub</h4>
-                      <p><a style="text-decoration: underline !important;" href="https://github.com/naunglinshein" target="_blank">naunglinshein</a></p>
-                    </div>
-                  </div>
-                  
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon">
-                        <i class="fa-brands fa-line"></i>
-                    </div>
-                    
-                    <div class="contact-info-content">
-                      <h4>Line ID</h4>
-                     <p>naunglinshein</p>
-                    </div>
-                  </div>
             </div>
           </div>
         </div>
-    </section>
-    <div id="footer"></div>
-      <!-- <div style="width: 100%;justify-content: center; margin: 50px;" class="container">
-        <div class="alert alert-info" role="alert" style="width: 100%;">
-            Development is currently in progress. Please check back later.
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner surface-card">
+          <p>&copy; <span data-year></span> Naung Lin Shein. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="mailto:naung3036@gmail.com">Email</a>
+            <a
+              href="https://www.linkedin.com/in/naung-lin-shein-a41459227/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/naunglinshein"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
           </div>
-      </div> -->
-    
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-</body>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
